@@ -1,12 +1,9 @@
-/**
- * Create the store with dynamic reducers
- */
-
-import { createStore, applyMiddleware, compose } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';  // eslint-disable-line
 import { fromJS } from 'immutable';
 import { routerMiddleware } from 'react-router-redux';
 import createSagaMiddleware from 'redux-saga';
-import createReducer from './reducers';
+
+import createReducer from 'reducers'; // eslint-disable-line
 
 const sagaMiddleware = createSagaMiddleware();
 
