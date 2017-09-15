@@ -3,7 +3,7 @@ import { fromJS } from 'immutable';
 import { routerMiddleware } from 'react-router-redux';
 import createSagaMiddleware from 'redux-saga';
 
-import createReducer from 'reducers'; // eslint-disable-line
+import createReducer from 'commons/reducers'; // eslint-disable-line
 
 const sagaMiddleware = createSagaMiddleware();
 
