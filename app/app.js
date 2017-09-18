@@ -38,8 +38,8 @@ if (module.hot) {
   // have to be constants at compile-time
   module.hot.accept(['containers/App'], () => {
     ReactDOM.unmountComponentAtNode(MOUNT_NODE);
-    render(translationMessages);
+    render();
   });
 }
 
-render(translationMessages);
+render();
