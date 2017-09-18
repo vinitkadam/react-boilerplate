@@ -14,7 +14,7 @@ module.exports = {
     path: buildPath,
     filename: '[name].[hash].js',
     chunkFilename: '[name].[chunkhash].chunk.js',
-    publicPath: isHot ? `http://localhost:${port}/build/${appName}/` : `/build/${appName}`,
+    publicPath: isHot ? `http://localhost:${port}/build/${appName}/` : `/build/${appName}/`,
   },
   module: {
     rules: loaders(),
