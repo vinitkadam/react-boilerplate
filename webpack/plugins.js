@@ -1,7 +1,7 @@
 const { isProduction, isHot, port, buildPath } = require('./config');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
-const NormalizeChunksPlugin = require('normalize-chunks-webpack-plugin');
+const NormalizeChunksPlugin = require('./plugins/NormalizeChunksPlugin');
 const HotManifestPlugin = require('./plugins/HotManifestPlugin');
 
 
