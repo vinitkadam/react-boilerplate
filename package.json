@@ -19,7 +19,8 @@
     "predev": "npm run clean",
     "preprod": "npm run clean",
     "prewatch": "npm run clean",
-    "prehot": "npm run clean"
+    "prehot": "npm run clean",
+    "test": "jest"
   },
   "author": "Max Stoiber",
   "license": "MIT",
@@ -72,6 +73,7 @@
     "cross-env": "5.0.0"
   },
   "devDependencies": {
+    "jest": "^21.1.0",
     "webpack": "3.5.5",
     "webpack-dev-server": "^2.8.2"
   }
