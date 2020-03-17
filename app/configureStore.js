@@ -6,7 +6,7 @@ import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import { routerMiddleware } from 'connected-react-router';
 import { createInjectorsEnhancer, forceReducerReload } from 'redux-injectors';
 import createSagaMiddleware from 'redux-saga';
-import createReducer from './reducers';
+import createReducer from 'commons/reducers';
 
 export default function configureAppStore(initialState = {}, history) {
   const reduxSagaMonitorOptions = {};

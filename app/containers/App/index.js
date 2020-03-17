@@ -6,19 +6,13 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Switch, Route } from 'react-router-dom';
+import { hot } from 'react-hot-loader/root';
 
-import HomePage from 'containers/HomePage/Loadable';
-import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import Router from 'pages';
 
 function App({ match }) {
   return (
-    <div>
-      <Switch>
-        <Route exact path={match.url} component={HomePage} />
-        <Route component={NotFoundPage} />
-      </Switch>
-    </div>
+    <Router match={match} />
   );
 }
 
@@ -26,4 +20,4 @@ App.propTypes = {
   match: PropTypes.object.isRequired,
 };
 
-export default App;
+export default hot(App);
