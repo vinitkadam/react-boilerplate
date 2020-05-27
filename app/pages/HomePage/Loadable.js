@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import loadable from 'commons/utils/loadable';
+import loadable from 'utils/loadable';
 import LoadingIndicator from 'commons/components/LoadingIndicator';
 
 export default loadable(() => import('./index'), {
